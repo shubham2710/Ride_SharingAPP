@@ -81,7 +81,7 @@ public class RideService {
 
 
         // Strategy to Fetch for Maximum Vacants Seat
-        if (rideType=="Vacant" || rideType==""){
+        if (rideType=="Most_Vacant" || rideType==""){
             optionalRide = Optional.of(rides.stream()
                     .max(Comparator.comparing(ride -> ride.getAvailableSeats())).get());
         }else {

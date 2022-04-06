@@ -45,16 +45,16 @@ public class RideSharingAppTest {
         Ride shashankBalenoHydBangRide = rideController.createRide(shashank, shashankBalenoVehicle, City.HYDERABAD,City.BANGALORE,6,new Date(2019, 1, 27,10,0),14);
 
 
-//        Ride nandhiniRideBangMys = rideController.selectRide(nandini,City.BANGALORE,City.MYSORE,1,"Vacant");
-//        printRideDetails(nandini,nandhiniRideBangMys);
+        Ride nandhiniRideBangMys = rideController.selectRide(nandini,City.BANGALORE,City.MYSORE,1,"Most_Vacant");
+        printRideDetails(nandini,nandhiniRideBangMys);
 
         Ride gauravRideBangMys = rideController.selectRide(gaurav,City.BANGALORE,City.MYSORE,1,"Polo");
         printRideDetails(gaurav,gauravRideBangMys);
 
-        Ride shashankRideMumBang = rideController.selectRide(shashank,City.MUMBAI, City.BANGALORE,1,"Vacant");
+        Ride shashankRideMumBang = rideController.selectRide(shashank,City.MUMBAI, City.BANGALORE,1,"Most_Vacant");
         printRideDetails(shashank,shashankRideMumBang);
 
-        Ride rohanHydBangRide = rideController.selectRide(rohan,City.HYDERABAD, City.BANGALORE,1,"Vacant");
+        Ride rohanHydBangRide = rideController.selectRide(rohan,City.HYDERABAD, City.BANGALORE,1,"Activa");
         printRideDetails(rohan,rohanHydBangRide);
 
 
